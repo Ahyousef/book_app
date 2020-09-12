@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../../layout/head')%>
+</head>
+<%- include('../../layout/header')%>
+
+<body>
+    <div class="book-container" style="margin-left:auto; margin-right: auto;">
+        <img src=<%= book.image_url%>>
+        <h2 class="book-title"><%= book.title%></h2>
+        <p class="book-author"><%= book.author%></p>
+        <p class="book-isbn"><%= book.isbn%></p>
+        <p class="book-desc"><%= book.description%></p>
+        <p class="book-categ"><%= book.categories%></p>
+        <button id="UpdateBtn">Update</button>
+
+        <form action="/deleteBook/<%=book.id%>?_method=delete" method="post">
+            <button>Delete</button>
+        </form>
+        <section id="updateDetailsFormContain">
+            <%- include('./edit')%>
+        </section>
+
+    </div>
+    <%- include('../../layout/footer')%>
+</body>
+</html>

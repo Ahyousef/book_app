@@ -1,0 +1,38 @@
+body,html{
+    width: 100%;
+}
+main{
+    width: 100%;
+}
+header ,h2 {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2% 0;
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+h2 {
+    background-color: grey;
+    text-align: center;
+}
+h3 {
+    background-color: lightgrey;
+    text-align: center;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+
+section{
+    box-sizing: border-box;
+    padding: 5%;
+}
+input,select{
+    display: block;
+}
